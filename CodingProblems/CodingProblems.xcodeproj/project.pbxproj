@@ -37,6 +37,7 @@
 		4F0C972F188718AB00BCCEDE /* TicTacToe.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TicTacToe.cpp; sourceTree = "<group>"; };
 		4F0C9730188718AB00BCCEDE /* classTicTacToeGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = classTicTacToeGame.h; sourceTree = "<group>"; };
 		4F0C973218871BEF00BCCEDE /* classTicTacToeGame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = classTicTacToeGame.cpp; sourceTree = "<group>"; };
+		4F0C973418871EFE00BCCEDE /* TicTacToe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TicTacToe.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +76,7 @@
 				4F0C972A1887165F00BCCEDE /* ReverseSentence.cpp */,
 				4F0C972D188717D700BCCEDE /* ReverseSentence.h */,
 				4F0C972F188718AB00BCCEDE /* TicTacToe.cpp */,
+				4F0C973418871EFE00BCCEDE /* TicTacToe.h */,
 				4F0C9730188718AB00BCCEDE /* classTicTacToeGame.h */,
 				4F0C973218871BEF00BCCEDE /* classTicTacToeGame.cpp */,
 			);
@@ -213,6 +215,7 @@
 		4F0C97281887165000BCCEDE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -220,6 +223,7 @@
 		4F0C97291887165000BCCEDE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

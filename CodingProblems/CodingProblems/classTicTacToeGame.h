@@ -15,26 +15,57 @@
 
 typedef std::pair<int,int> location;
 
+class Computer;
+
 enum CURRENT_TURN {
     PLAYER1 = 0,
-    PLAYER2 = 1
+    PLAYER2
+};
+
+enum STATE {
+    WIN = 0,
+    LOSE,
+    DRAW
 };
 
 class TicTacToeGame {
     std::vector<std::vector<char>> gameBoard;
     CURRENT_TURN turn;
+    STATE state;
+    int moveCount;
+    
+    Computer *computer;
+    bool computerPlayer;
+    location prevMove;
     
 public:
+
     TicTacToeGame();
     
     CURRENT_TURN getCurrentTurn();
     void updateCurrentTurn();
     
     void printGameBoard();
-    void updateGameBoard(location);
+    location updateGameBoard();
+    
+    STATE getState();
+    
+    void updateMoveCount();
+    
+    bool didWin(location);
+    
+    void setComputerPlayer();
+    
+    location determineNextMove();
+    
+    void setPrevMove(location);
 };
 
+class Computer : public TicTacToeGame {
+    
 
+public:
 
+};
 
 #endif /* defined(__CodingProblems__classTicTacToeGame__) */

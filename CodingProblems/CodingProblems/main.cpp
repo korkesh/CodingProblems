@@ -12,6 +12,7 @@
 int main() {
     // Reverses a Sentence (In Place)
     reverseSentence();
+    BeginTicTacToe();
     
     return 1;
 }

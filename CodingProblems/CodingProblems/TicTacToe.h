@@ -9,6 +9,9 @@
 #ifndef CodingProblems_TicTacToe_h
 #define CodingProblems_TicTacToe_h
 
+#include "classTicTacToeGame.h"
+
+void BeginTicTacToe();
 
 
 #endif
